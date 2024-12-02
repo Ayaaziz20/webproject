@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed; /* Make the footer fixed at the bottom */
+    bottom: 0; /* Place it at the bottom of the page */
+    left: 0; /* Align from the left side */
+    right: 0; /* Align from the right side */
+    text-align: center; /* Center-align the text */
+    background-color: #f1f1f1; /* You can change the background color as needed */
+    padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px; 
+    display: flex;
+    /* flex-direction: ; /* Makes the items stack vertically */
+    align-items: flex-end; /* Ensures the items are aligned at the bottom */
+    /* text-align: center; */
+}
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none; 
+    padding: 5px; /* Reduce the space inside the button */
+    cursor: pointer;
+    align-self: flex-end; /* Position the button at the bottom horizontally */
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+nav ul {
+    list-style-type: none; /* Remove the bullets from the list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use Flexbox to display items in a row */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add space between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove the underline from links */
+    color: black; /* Change the text color (you can change it as needed) */
+}
+
+.product-image {
+    /* width: 10%; Makes the image take the full width of the product card */
+    width: 450px; /* Sets a maximum width for the images */
+    height: 500px; /* Sets a maximum height for the images */
+    /* object-fit: none; Ensures the image covers the area without distortion */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 10px) {
+    .product-image {
+        max-width: 100px; /* Smaller max width for mobile devices */
+        max-height: 100px; /* Smaller max height for mobile devices */
+    }
+}
